@@ -112,7 +112,7 @@ const Experience = () => {
     }
   ];
 
-  // Remove broken, duplicate, and user-uploaded images from hackathons
+  // Remove duplicate entries from hackathons
   const seen = new Set();
   const hackathonsFiltered = hackathonsRaw
     .filter(h => {
@@ -120,8 +120,6 @@ const Experience = () => {
       const key = `${h.title}|${h.issuer}|${h.date}`;
       if (seen.has(key)) return false;
       seen.add(key);
-      // REMOVE: exclude any image that is in /lovable-uploads/
-      if (h.image.startsWith("/lovable-uploads/")) return false;
       return true;
     });
 
