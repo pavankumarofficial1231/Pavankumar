@@ -109,6 +109,20 @@ const Experience = () => {
       date: "06/03/2025 - 07/03/2025",
       description: "Developed an AI-powered algorithmic trading system that analyzed real-time stock market data to make predictive trading decisions. Focused on automation, trend forecasting, and risk management.",
       image: "/lovable-uploads/122cef33-385e-459e-94b2-310a72021fbd.png"
+    },
+    {
+      title: "Campus Energy Optimizer - 1st Prize Winner",
+      issuer: "Global Institute of Management Studies",
+      date: "2025",
+      description: "Won 1st prize for developing a smart energy optimization system for campuses using IoT and AI. Focused on reducing waste and improving energy efficiency.",
+      image: "/lovable-uploads/d91d44ea-b431-4c54-a2bd-bd98acf8a7cf.png" // Placeholder
+    },
+    {
+      title: "Hackwave 2025",
+      issuer: "Hackwave Organization",
+      date: "2025",
+      description: "Participated in Hackwave, building innovative tech solutions under tight deadlines.",
+      image: "/lovable-uploads/a6fffa43-662b-43fc-acc4-78bf3fc33b8b.png" // Placeholder
     }
   ];
 
