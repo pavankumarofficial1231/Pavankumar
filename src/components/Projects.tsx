@@ -61,15 +61,13 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Centered Project Display */}
-        <div className="relative mb-16 flex justify-center w-full">
-          <div className="w-full flex justify-center px-4 md:px-12">
-            <div className="flex justify-center gap-6">
-              {projects.map((project, index) => (
-                <TiltWrapper key={`${project.id}-${index}`} maxTilt={8} scale={1.05}>
+        <div className="relative mb-16 px-4">
+          <div className="flex flex-wrap justify-center gap-8">
+            {projects.map((project, index) => (
+              <div key={`${project.id}-${index}`} className="w-full max-w-[400px]">
+                <TiltWrapper maxTilt={8} scale={1.05}>
                   <div
                     className={`
-                    flex-shrink-0 w-[350px]
                     relative rounded-lg overflow-hidden border
                     shadow-xl transition-all duration-500
                     hover:shadow-2xl hover:-translate-y-2 hover:scale-105
@@ -204,8 +202,8 @@ const Projects = () => {
                   </div>
                 </div>
                 </TiltWrapper>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
 

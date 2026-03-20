@@ -60,8 +60,25 @@ const Navigation = () => {
             </Badge>
           </div>
 
-          {/* Right side buttons with gap */}
-          <div className="flex items-center gap-3">
+          {/* Desktop Navigation Links */}
+          <div className="hidden md:flex items-center gap-6">
+            {navItems.map((item) => (
+              <button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                className={`
+                  text-sm font-medium transition-all duration-300 hover:text-primary relative group
+                  ${isLightMode ? 'text-blue-800' : 'text-foreground/80 hover:text-white'}
+                `}
+              >
+                {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              </button>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button (visible only on mobile) */}
+          <div className="md:hidden flex items-center gap-3">
             <Button
               variant="ghost"
               size="sm"
@@ -77,10 +94,10 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Menu (works for both mobile and desktop) */}
+        {/* Mobile Menu Dropdown */}
         {isOpen && (
           <div className={`
-            absolute left-0 right-0 top-16 mx-4 rounded-lg p-4 shadow-xl animate-scale-in border-2
+            md:hidden absolute left-0 right-0 top-16 mx-4 rounded-lg p-4 shadow-xl animate-scale-in border-2
             ${isLightMode 
               ? 'bg-blue-100/95 backdrop-blur-lg border-blue-300/50' 
               : 'bg-background/95 backdrop-blur-sm border-primary/30'
