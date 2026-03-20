@@ -35,24 +35,13 @@ const Index = () => {
 
       <MusicPlayer />
       <Hero />
-      <ScrollReveal>
-        <About />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Education />
-      </ScrollReveal>
+      <About />
+      <Education />
 
-      <ScrollReveal>
-        <Skills />
-      </ScrollReveal>
+      <Skills />
       <Projects />
-      <ScrollReveal>
-        <Experience />
-      </ScrollReveal>
-
-      <ScrollReveal>
-        <Contact />
-      </ScrollReveal>
+      <Experience />
+      <Contact />
       <ScrollToTop />
     </div>
   );

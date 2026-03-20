@@ -18,7 +18,7 @@ const ScrollReveal: React.FC<PropsWithChildren<ScrollRevealProps>> = ({
   className,
   variant = 'up',
 }) => {
-  const [ref, isVisible] = useScrollAnimation(0.15);
+  const [ref, isVisible] = useScrollAnimation(0.05);
 
   return (
     <div

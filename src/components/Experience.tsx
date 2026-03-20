@@ -13,7 +13,7 @@ import { Sparkles } from 'lucide-react';
 const Experience = () => {
   const { theme } = useTheme();
   const isLightMode = theme === 'light';
-  const [experienceRef, isExperienceVisible] = useScrollAnimation(0.2);
+  const [experienceRef, isExperienceVisible] = useScrollAnimation(0.05);
 
   // Updated certifications array with new Google AI certificates
   const certifications = [

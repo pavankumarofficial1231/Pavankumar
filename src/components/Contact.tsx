@@ -12,7 +12,7 @@ import { toast } from 'sonner';
 const Contact = () => {
   const { theme } = useTheme();
   const isLightMode = theme === 'light';
-  const [contactRef, isContactVisible] = useScrollAnimation(0.2);
+  const [contactRef, isContactVisible] = useScrollAnimation(0.05);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const [formData, setFormData] = useState({
