@@ -17,7 +17,6 @@ import FloatingElements from '../components/FloatingElements';
 import ScrollReveal from '../components/ScrollReveal';
 import LiquidBackground from '../components/LiquidBackground';
 import MeteorEffect from '../components/MeteorEffect';
-import ThemeCursorGlow from '../components/ThemeCursorGlow';
 import { useTheme } from '../components/ThemeProvider';
 
 const Index = () => {
@@ -26,7 +25,6 @@ const Index = () => {
 
   return (
     <div className={`min-h-screen relative w-full overflow-x-hidden ${isLightMode ? 'bg-[#f0f4f8]' : 'bg-[#050511]'}`}>
-      <ThemeCursorGlow />
       <MeteorEffect />
       <LiquidBackground />
       <ScrollProgress />
