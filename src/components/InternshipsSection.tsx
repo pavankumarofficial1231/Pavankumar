@@ -135,7 +135,7 @@ const InternshipsSection = () => {
             </div>
 
             <Dialog open={!!selectedCertificate} onOpenChange={() => setSelectedCertificate(null)}>
-                <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+                <DialogContent className="max-w-3xl max-h-[90vh] w-[95vw] p-0 overflow-y-auto">
                     <DialogHeader>
                         <DialogTitle className="flex items-center gap-2 text-2xl">
                             <FileCheck className="w-6 h-6 text-green-500" />

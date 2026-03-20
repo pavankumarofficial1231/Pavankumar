@@ -109,7 +109,7 @@ const HackathonsCarousel: React.FC<HackathonsCarouselProps> = ({ hackathons }) =
       </div>
 
       <Dialog open={!!selectedHackathon} onOpenChange={() => setSelectedHackathon(null)}>
-        <DialogContent className="max-w-4xl max-h-[95vh] w-[95vw] p-0 overflow-hidden">
+        <DialogContent className="max-w-4xl max-h-[95vh] w-[95vw] p-0 overflow-y-auto">
           {selectedHackathon && (
             <div className="flex flex-col h-full">
               <DialogHeader className="p-6 pb-4 border-b">
