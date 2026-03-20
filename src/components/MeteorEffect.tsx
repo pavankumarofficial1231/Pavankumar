@@ -46,9 +46,8 @@ const MeteorEffect = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden h-full w-full bg-black">
-      {/* Subtle Star Field Gradient */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900/20 via-black to-black"></div>
+    <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden h-full w-full">
+      {/* Container is now transparent to allow LiquidBackground through */}
 
       {/* Twinkling Stars */}
       {stars.map((star) => (

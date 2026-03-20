@@ -26,11 +26,9 @@ const Index = () => {
 
   return (
     <div className={`min-h-screen relative w-full overflow-x-hidden ${isLightMode ? 'bg-[#f0f4f8]' : 'bg-[#050511]'}`}>
-      <GlobalParticleEffect />
       <MeteorEffect />
       <LiquidBackground />
       <ScrollProgress />
-      <AnimatedElements />
       <Navigation />
 
       <MusicPlayer />
