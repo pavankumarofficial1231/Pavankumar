@@ -80,8 +80,8 @@ const Projects = () => {
                   `}
                   style={{
                     boxShadow: project.featured 
-                      ? `0 10px 40px -10px rgba(236, 72, 153, 0.5), 0 0 50px -10px #ec489980`
-                      : `0 10px 30px -10px rgba(0, 0, 0, 0.3), 0 0 40px -10px ${project.gradient.includes('blue') ? '#3b82f6' : project.gradient.includes('purple') ? '#a855f7' : project.gradient.includes('emerald') ? '#10b981' : '#f97316'}40`,
+                      ? `0 10px 30px -10px rgba(236, 72, 153, 0.4), 0 0 25px -5px #ec489950`
+                      : `0 10px 25px -10px rgba(0, 0, 0, 0.25), 0 0 20px -5px ${project.gradient.includes('blue') ? '#3b82f6' : project.gradient.includes('purple') ? '#a855f7' : project.gradient.includes('emerald') ? '#10b981' : '#f97316'}30`,
                   }}
                 >
                   {/* Featured Badge */}
@@ -131,9 +131,8 @@ const Projects = () => {
                       <div
                         className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`}
                       ></div>
-                      {/* Image Backlit Glow */}
                       <div
-                        className="absolute -inset-2 opacity-0 group-hover:opacity-60 transition-opacity duration-500 blur-xl -z-10"
+                        className="absolute -inset-1.5 opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-lg -z-10"
                         style={{
                           background: `linear-gradient(to right, ${project.gradient.includes('blue') ? '#3b82f6' : project.gradient.includes('purple') ? '#a855f7' : project.gradient.includes('emerald') ? '#10b981' : '#f97316'}, transparent)`,
                         }}

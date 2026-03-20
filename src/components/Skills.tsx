@@ -98,7 +98,7 @@ const Skills = () => {
                     }
                     `}
                   style={{
-                    boxShadow: `0 4px 15px -3px ${category.color}30, 0 0 20px -5px ${category.color}20`,
+                    boxShadow: `0 4px 10px -3px ${category.color}20, 0 0 12px -5px ${category.color}15`,
                   }}
                 >
                   {/* Backlit Glow Effect on Hover (Solid Fill) */}

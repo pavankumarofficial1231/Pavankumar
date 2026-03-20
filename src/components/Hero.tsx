@@ -58,10 +58,10 @@ const Hero = () => {
 
               <div className={`flex flex-wrap gap-3 text-sm animate-fade-in-up pt-4 border-t ${isLightMode ? 'border-blue-300/50 text-blue-600' : 'border-primary/20 text-foreground'}`} style={{ animationDelay: '0.4s' }}>
                 <div className={`group relative flex items-center gap-2 rounded-full px-3 py-2 border transition-all duration-300 overflow-visible ${isLightMode ? 'bg-white/60 border-blue-300 text-blue-700 hover:border-blue-400' : 'bg-primary/10 border-primary/30 text-foreground hover:border-primary/50'}`}
-                  style={{ boxShadow: '0 4px 15px -3px #3b82f630, 0 0 20px -5px #3b82f620' }}
+                  style={{ boxShadow: '0 4px 10px -3px #3b82f620, 0 0 15px -5px #3b82f615' }}
                 >
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-full"
-                    style={{ background: 'radial-gradient(circle at 50% 50%, #3b82f625 0%, transparent 70%)', filter: 'blur(10px)' }}
+                    style={{ background: 'radial-gradient(circle at 50% 50%, #3b82f615 0%, transparent 70%)', filter: 'blur(8px)' }}
                   />
                   <Mail className="w-4 h-4 text-primary relative z-10" />
                   <span className="font-medium relative z-10">pavankumarofficialcareers@gmail.com</span>
@@ -153,7 +153,7 @@ const Hero = () => {
               >
                 {/* Backlit Glow Effect */}
                 <div
-                  className="absolute -inset-2 opacity-0 group-hover:opacity-60 transition-opacity duration-500 blur-2xl -z-10 rounded-2xl"
+                  className="absolute -inset-1.5 opacity-0 group-hover:opacity-30 transition-opacity duration-500 blur-xl -z-10 rounded-2xl"
                   style={{ background: 'linear-gradient(135deg, #3b82f6, #a855f7, #06b6d4)' }}
                 />
 
