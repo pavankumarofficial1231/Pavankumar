@@ -23,7 +23,7 @@ const MeteorEffect = () => {
 
   useEffect(() => {
     // Generate static set of meteors
-    const meteorCount = 20;
+    const meteorCount = 8;
     const newMeteors = Array.from({ length: meteorCount }, (_, i) => ({
       id: i,
       left: Math.floor(Math.random() * 100), // 0-100%
@@ -33,12 +33,12 @@ const MeteorEffect = () => {
     setMeteors(newMeteors);
 
     // Generate static set of stars
-    const starCount = 75;
+    const starCount = 40;
     const newStars = Array.from({ length: starCount }, (_, i) => ({
       id: i,
       top: Math.floor(Math.random() * 100),
       left: Math.floor(Math.random() * 100),
-      size: Math.random() * 2 + 1, // 1-3px
+      size: Math.random() * 1.5 + 0.5, // slightly smaller
       delay: Math.random() * 5,
       duration: Math.random() * 3000 + 2000, // 2-5s
     }));
