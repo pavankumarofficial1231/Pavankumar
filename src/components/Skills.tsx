@@ -61,11 +61,7 @@ const Skills = () => {
   return (
     <section id="skills" className={`py-20 px-4 border-b-2 relative overflow-hidden ${isLightMode ? 'border-blue-200/60 bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200' : 'border-gray-700/50 bg-accent/5'}`}>
 
-      {/* Animated background blobs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className={`absolute top-10 left-10 w-72 h-72 rounded-full blur-3xl opacity-20 animate-float-gentle ${isLightMode ? 'bg-blue-400' : 'bg-blue-600'}`}></div>
-        <div className={`absolute bottom-10 right-10 w-96 h-96 rounded-full blur-3xl opacity-20 animate-float-gentle ${isLightMode ? 'bg-purple-400' : 'bg-purple-600'}`} style={{ animationDelay: '1s' }}></div>
-      </div>
+      {/* Component Background logic removed to reduce overdraw and extra glow */}
 
       <div className="max-w-7xl mx-auto relative z-10 w-full">
         <div className="text-center mb-12 card-entrance">

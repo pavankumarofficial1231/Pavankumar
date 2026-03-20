@@ -238,12 +238,7 @@ const Experience = () => {
         }`}
       ref={experienceRef}
     >
-      {isLightMode && (
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-20 -right-20 w-60 h-60 bg-purple-400/10 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-blue-400/10 rounded-full blur-3xl animate-float-delayed"></div>
-        </div>
-      )}
+      {/* Simplified background to reduce extra glow */}
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className={`text-center mb-12 transition-all duration-700 ${isExperienceVisible ? 'animate-fade-in-up' : 'opacity-0 transform translate-y-10'}`}>

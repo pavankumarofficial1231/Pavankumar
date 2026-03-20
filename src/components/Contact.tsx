@@ -78,12 +78,7 @@ const Contact = () => {
         }`}
       ref={contactRef}
     >
-      {isLightMode && (
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-20 -right-20 w-60 h-60 bg-green-400/15 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-blue-400/15 rounded-full blur-3xl animate-float-delayed"></div>
-        </div>
-      )}
+      {/* Background optimized to remove redundant glow */}
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className={`text-center mb-12 transition-all duration-700 ${isContactVisible ? 'animate-fade-in-up' : 'opacity-0 transform translate-y-10'}`}>
