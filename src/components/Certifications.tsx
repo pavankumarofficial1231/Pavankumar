@@ -44,8 +44,8 @@ const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
                           group relative flex items-center gap-3 p-3 rounded-xl border transition-all duration-300 overflow-hidden
                           hover:scale-[1.02] hover:-translate-y-1 cursor-pointer
                           ${isLightMode
-                                ? 'bg-white/70 backdrop-blur-md shadow-sm border-white/50 hover:bg-blue-100/60 hover:border-blue-300 hover:shadow-lg'
-                                : 'bg-[#1e293b]/40 backdrop-blur-xl border-white/10 hover:border-cyan-400/50 hover:bg-cyan-900/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)]'
+                                ? 'bg-white shadow-sm border-white/50 hover:bg-blue-100/60 hover:border-blue-300 hover:shadow-lg'
+                                : 'bg-[#1e293b] border-white/10 hover:border-cyan-400/50 hover:bg-cyan-900/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)]'
                             }
                         `}
                     >

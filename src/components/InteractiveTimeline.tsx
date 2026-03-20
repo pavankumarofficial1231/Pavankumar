@@ -238,9 +238,14 @@ const InteractiveTimeline = () => {
       {/* ── MOBILE: vertical fallback ── */}
       <div className="md:hidden space-y-10 relative">
         <div className={`absolute left-[35px] top-[40px] bottom-[40px] w-[2px] rounded-full ${isLightMode ? 'bg-blue-100' : 'bg-blue-900/30'}`} />
-        <div
-          className="absolute left-[35px] top-[40px] w-[2px] rounded-full transition-all duration-300"
-          style={{ height: `${timelineProgress}%`, background: 'linear-gradient(to bottom, #3b82f6, #a855f7, #10b981)' }}
+        <div 
+          className="absolute left-[35px] top-[40px] w-[2px] rounded-full transition-all duration-500 origin-top"
+          style={{ 
+            height: `calc(100% - 80px)`, 
+            background: 'linear-gradient(to bottom, #3b82f6, #a855f7, #10b981)',
+            transform: `scaleY(${timelineProgress / 100})`,
+            opacity: timelineProgress > 0 ? 1 : 0
+          }}
         />
         {educationData.map((edu, index) => (
           <div key={index} className="relative pl-24">
