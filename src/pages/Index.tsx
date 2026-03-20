@@ -19,7 +19,6 @@ import LiquidBackground from '../components/LiquidBackground';
 import MeteorEffect from '../components/MeteorEffect';
 import GlobalParticleEffect from '../components/GlobalParticleEffect';
 import { useTheme } from '../components/ThemeProvider';
-import Preloader from '../components/Preloader';
 
 const Index = () => {
   const { theme } = useTheme();
@@ -27,7 +26,6 @@ const Index = () => {
 
   return (
     <div className={`min-h-screen relative w-full overflow-x-hidden ${isLightMode ? 'bg-[#f0f4f8]' : 'bg-[#050511]'}`}>
-      <Preloader />
       <GlobalParticleEffect />
       <MeteorEffect />
       <LiquidBackground />
